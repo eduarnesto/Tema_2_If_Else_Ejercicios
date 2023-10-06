@@ -20,16 +20,23 @@ public class Ejercicio1 {
 		//Compruebo la nota
 		
 		switch(nota) {
-		case 0,1,2,3,4:
+		case 0,1,2,3,4->{
 			System.out.println("Tiene un insuficiente");
-		case 5:
-			System.out.println("Tienes un suficiente");
-			System.out.println("Tienes un suficiente");
-			System.out.println("Tienes un bien");
-			System.out.println("Tienes un notable");
-			System.out.println("Tienes un sobresaliente");	
 		}
-	
+		case 5->{
+			System.out.println("Tienes un suficiente");
+		}
+		case 6->{
+			System.out.println("Tienes un bien");
+		}
+		case 7,8->{
+			System.out.println("Tienes un notable");
+		}
+		case 9,10->{
+			System.out.println("Tienes un sobresaliente");
+		}
+		}
+		
 		//Cierro el scanner
 		sc.close();
 	}
