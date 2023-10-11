@@ -18,7 +18,7 @@ public class Ejercicio8 {
 		num = sc.nextFloat();
 		
 		//Compruebo la nota
-		if (num<5) {
+		if (num<5&&num>=0) {
 			System.out.println("Tiene un insuficiente");
 		} else if (num<6) {
 			System.out.println("Tienes un suficiente");
@@ -26,9 +26,11 @@ public class Ejercicio8 {
 			System.out.println("Tienes un bien");
 		} else if (num<9) {
 			System.out.println("Tienes un notable");
-		} else if (num>=9) {
+		} else if (num>=9&&num<=10) {
 			System.out.println("Tienes un sobresaliente");
-		} 
+		} else {
+			System.out.println("Lanota introducida no es válida");
+		}
 		
 		//Cierro el scanner
 		sc.close();

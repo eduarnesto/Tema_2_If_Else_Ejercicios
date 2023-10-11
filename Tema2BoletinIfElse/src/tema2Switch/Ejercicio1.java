@@ -35,6 +35,9 @@ public class Ejercicio1 {
 		case 9,10->{
 			System.out.println("Tienes un sobresaliente");
 		}
+		default->{
+			System.out.println("El valor no es váido");
+		}
 		}
 		
 		//Cierro el scanner

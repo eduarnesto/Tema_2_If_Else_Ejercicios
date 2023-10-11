@@ -17,8 +17,7 @@ public class Ejercicio2 {
 		//Leo el número del teclado
 		dia = sc.nextInt();
 		
-		//Compruebo la nota
-		
+		//Compruebo el día
 		switch(dia) {
 		case 1->{
 			System.out.println("Lunes");
@@ -40,6 +39,9 @@ public class Ejercicio2 {
 		}
 		case 7->{
 			System.out.println("Domingo");
+		}
+		default->{
+			System.out.println("El valor introducido no es válido");
 		}
 		}
 		

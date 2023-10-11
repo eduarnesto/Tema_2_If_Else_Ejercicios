@@ -12,7 +12,7 @@ public class Ejercicio3 {
 		int num2;
 		
 		//Variable para guardar la selección
-		char select;
+		String select;
 				
 		//Scanner para leer el número
 		Scanner sc = new Scanner(System.in);
@@ -30,12 +30,36 @@ public class Ejercicio3 {
 		num2 = sc.nextInt();
 		
 		//Pregunto la operación que quiere realizar
-		System.out.println("Elija la operación que quiera realizar\nA.SUMAR LOS NÚMEROS\n"
+		System.out.println("Elija la operación que quiera realizar\n"
+				+ "A.SUMAR LOS NÚMEROS\n"
 				+ "B.RESTAR LOS NÚMEROS\n"
 				+ "C.MULTIPLICAR LOS NÚMEROS\n"
-				+ "D.DIVIDIR LOS NÚMEROS\n");
+				+ "D.DIVIDIR LOS NÚMEROS");
 		
-		//Leo
+		//Leo la elección
+		select = sc.next();
+		
+		//Realizo la operación indicada
+		switch (select) {
+		case "A"->{
+			System.out.println(num1+num2);
+		}
+		case "B"->{
+			System.out.println(num1-num2);
+		}
+		case "C"->{
+			System.out.println(num1*num2);
+		}
+		case "D"->{
+			System.out.println(num1/num2);
+		}
+		default->{
+			System.out.println("Elección no válida");
+		}
+		}
+		
+		//Cierro el Scanner
+		sc.close();
 
 	}
 
