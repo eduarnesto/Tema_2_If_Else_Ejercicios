@@ -6,10 +6,13 @@ public class Ejercicio3 {
 
 	public static void main(String[] args) {
 		//Variable para guardar el primer número
-		int num1;
+		float num1;
 		
 		//Variable para guardar el segundo número
-		int num2;
+		float num2;
+		
+		//Variable para guardar el resultado
+		float res;
 		
 		//Variable para guardar la selección
 		String select;
@@ -21,13 +24,13 @@ public class Ejercicio3 {
 		System.out.println("Introduzca un número");
 				
 		//Leo el número del teclado
-		num1 = sc.nextInt();
+		num1 = sc.nextFloat();
 		
 		//Pregunto el segundo número
 		System.out.println("Introduzca otro número");
 				
 		//Leo el número del teclado
-		num2 = sc.nextInt();
+		num2 = sc.nextFloat();
 		
 		//Pregunto la operación que quiere realizar
 		System.out.println("Elija la operación que quiera realizar\n"
@@ -42,16 +45,24 @@ public class Ejercicio3 {
 		//Realizo la operación indicada
 		switch (select) {
 		case "A"->{
-			System.out.println(num1+num2);
+			res=num1+num2;
+			System.out.println("El resultado de la operación elegida es: " + res);
 		}
 		case "B"->{
-			System.out.println(num1-num2);
+			res=num1-num2;
+			System.out.println("El resultado de la operación elegida es: " + res);
 		}
 		case "C"->{
-			System.out.println(num1*num2);
+			res=num1*num2;
+			System.out.println("El resultado de la operación elegida es: " + res);
 		}
 		case "D"->{
-			System.out.println(num1/num2);
+			if(num2!=0) {
+				res=num1/num2;
+				System.out.println("El resultado de la operación elegida es: " + res);
+			}else {
+				System.out.println("No se puede dividir por cero");
+			}
 		}
 		default->{
 			System.out.println("Elección no válida");

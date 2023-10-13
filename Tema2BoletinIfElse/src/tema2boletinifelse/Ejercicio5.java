@@ -13,9 +13,6 @@ public class Ejercicio5 {
 
 		// Variable para guardar el tercer número
 		int num3;
-		
-		//Variable para guardar el número mayor
-		int mayor;
 
 		// Scanner para leer los números
 		Scanner sc = new Scanner(System.in);
@@ -56,6 +53,7 @@ public class Ejercicio5 {
 		} else {
 			System.out.println(num3+">="+num2+">="+num1);
 		}
+		
 		// Cierro el Scanner
 		sc.close();
 	}
